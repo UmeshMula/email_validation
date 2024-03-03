@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Signup Form</title>
+</head>
+<body>
+
+    <div class="container">
+        <form id="signupForm">
+          <label for="email">Email:</label>
+          <input type="email" id="email" placeholder="Example@email.com" oninput="validateEmail()">
+          <p id="emailError" class="error">Make sure email is more than 3 characters and has "@" and a "."</p>
+    
+          <label for="password">Password:</label>
+          <input type="password" id="password" placeholder="Your password" oninput="validatePassword()">
+          <p id="passwordError" class="error">Make sure password is more than 8 characters.</p>
+          <p id="allGoodMessage" class="success">All good to go!</p>
+    
+          <button type="button" onclick="submitForm()">Submit</button>
+        </form>
+      </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
